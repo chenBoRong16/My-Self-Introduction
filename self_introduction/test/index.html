@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bo Rong</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="style_darkMode.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- JQuery UI -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <script src="change.js"></script>
+    </head>
+    <body>
+    <button id = "myButton">Dark Mode</button>
+        <!--個人照片和標題-->
+    <img src="IMG_20240909_183102.jpg" width="150" height="200" alt="Bo Rong's Photo">
+
+    <div id="visitor-counter">
+        <?php
+            $file = "store.txt";
+            if (!file_exists($file)){
+                file_put_contents($file, 0);
+            }
+
+            $count = (int)file_get_contents($file);
+            $count++;
+            file_put_contents($file, $count);
+            echo "visted: {$count} Times";
+        ?>
+    </div>
+    <h1>Bo Rong</h1>
+    <hr>
+
+    <p style="font-size: 14pt;">I am a student at <i>Computer Engineering Department</i> of 
+        <a href=" https://www.nsysu.edu.tw" 
+        class="university-link">
+        National Sun Yat-sen University</a> in Taiwan
+    </p>   
+
+    <div class="flex-container" >
+        
+        <div class="expertise-section" id="accordion1">
+            <h3>Expertise</h3>  
+            <div>
+                <hr class="hrSection">
+                <ol>         
+                    <li> Computer Programming skill</li>
+                    <li> Calculus</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="project-section" id="accordion2">
+            <h3>Projects</h3>
+            <div>
+                <hr class="hrSection">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th><strong>Year</strong></th>
+                        <th><strong>Project</strong></th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" style="background-color: orange;"></td>
+                        <td>2024</td>
+                        <td>Enrolled in Yi-Han's class</td> 
+                    </tr>
+                    <tr>
+
+                        <td>2024</td>
+                        <td>Become a student in NSYSU</td>  
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+body.darkMode{
+    background-color: #333333;
+    color: white;
+} 
+
+body.darkMode div.login-box{
+    border: 1px solid white;
+}
+
+body.darkMode input[type = "submit"]{
+    background-color: #333333;
+    border-color: white;
+    color: white;
+}
+
+body.darkMode p.error{
+    color: rgb(245, 178, 178);
+}
+
+body.darkMode li{
+    border: 1px solid white;
+}
+
+body.darkMode div.ol-container {
+    background-color: #333333;
+    color: white;
+}
+
+body.darkMode div.table-container {
+    background-color: #333333;
+    color: white;
+}

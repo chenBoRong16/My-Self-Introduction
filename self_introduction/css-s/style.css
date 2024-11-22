@@ -1,0 +1,146 @@
+body{
+    font-family: 'Lora', serif;
+    color: black;
+    background-color: white;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button#myButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+}
+
+#visitor-counter{
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    font-size: 14px;
+
+}
+
+div.login-box{
+    border: 1px solid black;
+    border-radius: 20px;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    font-size: 10px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+p.error{
+    color: red;
+}
+
+input{
+    margin: 10px;
+}
+
+input[type="submit"]{
+    margin-left: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+h1{
+    font-family: 'Pacifico', cursive;
+    margin-left: 2%;
+}
+
+img#myPhoto{
+    width: 15%;
+    margin: 10px 2% 10px 10px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 120px;
+    border: 3px solid black;
+    border-radius: 20px;
+    transition: transform 0.4s ease; /* 添加平滑过渡效果 */
+}
+
+img#myPhoto:hover{
+    transform: scale(1.2);
+}
+
+p#introduction{
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 14pt;
+    margin-left: 2%;
+}
+
+.university-link {
+    font-weight: bold;
+    padding: 2px;
+    color: orange;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.university-link:hover {
+    color: turquoise;
+}
+
+div.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-left: 2%;
+    font-family: 'Lora', serif;
+}
+
+div.flex-container h3{
+    width: 501.2px;
+}
+
+div.ol-container{
+    width: 450px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    border: 1px solid black;
+}
+
+div.ol-container ol{
+    width: 400px;
+    padding: 0;
+}
+
+div.table-container{
+    width: 450px;
+    padding: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    border: 1px solid black;
+}
+
+div.table-container table{
+    width: 400px;
+    padding: 0;
+}
+
+li{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+th{
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 5px;
+    text-align: left;
+
+    color: black;
+}
+
+td{
+    background-color: #FDE0C3;
+    padding: 5px;
+    text-align: left;
+
+    color: black;
+}
