@@ -44,8 +44,3 @@ Follow these steps to run this project on your local machine using XAMPP:
     - Confirm that Apache is running in XAMPP.
     - Verify the project folder is correctly placed in `htdocs`.
     - Check that your browser's URL matches `http://localhost/self_introduction/index.php`.
-
----
-
-### **Conclusion**
-This `readme.md` is designed to guide users through setting up and running your project in a clear and professional manner. If you'd like to add more advanced configuration details or stylistic enhancements, let me know!
